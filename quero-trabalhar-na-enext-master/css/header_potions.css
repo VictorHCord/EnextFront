@@ -1,0 +1,100 @@
+/*Estilização do Cabeçalho da Página*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	max-width: 1200px;
+	width: 100%;
+	height: 230px;
+	margin: auto;
+	box-sizing: border-box;
+	font-family: 'Droid Sans', sans-serif;
+	clear: both;
+}
+
+.logo{
+	width: 30%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.title{
+	font-size: 30px;
+	color: #f76555;
+}
+
+.title b{
+	color: #f1230c;
+	font-size: 30px;
+}
+
+
+.seach_potions{
+	width: 30%;
+	height: 100px;
+	float: left; 
+}
+
+.seach_potions_potions{
+	margin-top: 30px;
+	padding-left: 40px;
+	height: 30px;
+	width: 300px;
+	border-radius: 2px;
+	border: 1px solid #000;
+}
+
+.btn{
+	margin-top: 30px;
+	width: 35px;
+	height: 32px;
+	position: absolute;
+	background: no-repeat center;
+	background-image: url(../image/icons/lupa.png);
+	background-size: 70%;
+	border: none;
+	cursor: pointer;
+
+}
+
+.msg{
+	width: 20%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 15px;
+	color: #f1230c;
+}
+
+.compras{
+	width: 20%;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+.compras img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 25px;
+}
+
+.compras p{
+	margin-top: 35px;
+	font-size: 20px;
+	float: left;
+	margin-left: 30px;
+	color: #d9d9d9;
+}
+
+.apenas_numero{
+	color: #f1230c;
+}

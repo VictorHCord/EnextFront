@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Merlin´s Potions</title>
+	<meta charset="utf-8">
+
+	<!--Linkagem das paginas CSS -->
+	<link rel="stylesheet" type="text/css" href="css/header_potions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/potions_body.css">
+	<link rel="stylesheet" type="text/css" href="css/footer_potions.css">
+	<link rel="stylesheet" type="text/css" href="css/menu_complementos.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
+
+</head>
+<body>
+  <!--Inicio do menu  -->
+	<header> 
+      
+		<div class="menu_potion"><!--menu responsivo -->
+			<input type="submit" class="btn-potion">
+		</div>
+		<!--logo-->
+		<a href="index.html">
+			<div class="logo">
+				<p class="title"><b>MERLIN´S</b> POTIONS</p>
+				<p class="sub">-----fine potions since 1026-----</p>
+			</div>
+		</a>
+		<!--barra de busca-->
+		<div class="seach_potions">
+			<form action="#">
+
+				<input type="text" class="seach_potions_potions" placeholder="Search our stock">
+			</form>
+		</div>
+		<!--mensagem-->
+		<div class="msg">
+			<p>Free shipping<br>on orders over $50</p>
+		</div>
+		<!--caldeirão ou carrinho-->
+		<div class="compras">
+			<a href="#">
+				<img src="acessorio/icons/caldeirao.png">
+				<p>BAG: <span class="apenas_numero">1</span></p>
+			</a>
+		</div>
+		
+		<div class="msg-rsp">
+			<p>Free shipping on orders over $50</p>
+		</div>
+
+		<nav>
+			<a class="btn-close">X</a>
+
+			<div class="search_res"> 
+				<form action="#">
+					<input type="text" class="search_responsive" name="seach_potions" placeholder="Search our stock">
+				</form>
+			</div>
+
+			<ul> <!--Lista de itens no menu-->
+				<li>Potions
+					<img src="acessorio/icons/setabaixo.png">
+				</li>
+				<li>Ingredients
+					<img src="acessorio/icons/setabaixo.png">
+				</li>
+				<li>Books
+					<img src="acessorio/icons/setabaixo.png">
+				</li>
+				<li>Supplies
+					<img src="acessorio/icons/setabaixo.png">
+				</li>
+				<li>Charms
+					<img src="acessorio/icons/setabaixo.png">
+				</li>
+				<li>Clearance!  </li>
+			</ul>
+
+			<div class="login"> <!--Link de login-->
+				<a href="#">Sign In</a> or <a href="#">Sign Up</a>
+			</div>
+		</nav>
+	</header><!--Fim do Cabeçalho -->
+
+	<section><!--Inicio do Corpo da página -->
+		<h1>Potions</h1><!--Titulo da Página-->
+
+		<div class="potions_cash">
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/aging-potion.png"></a>
+				<legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/bulgeye-potion.png"></a>
+				<legend><b>Bulgeye Potion - </b><span class="cash_potions">19.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/dragon-tonic.png"></a>
+				<legend><b>Dragon Tonic - </b><span class="cash_potions">64.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/love-potion.png"></a>
+				<legend><b>Love Potion - </b><span class="cash_potions">29.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/polyjuice-potion.png"></a>
+				<legend><b>Polyjuice Potion - </b><span class="cash_potions">99.99</span></legend>
+			</div>
+			<div>
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/sleeping-draught.png"onclick="openModal();"></a>
+				<legend><b>Sleeping Draught - </b><span class="cash_potions">29.99</span></legend>
+			</div>
+		</div>
+
+      <a href="#" class="lightbox">abrir</a>
+	 <div class="background"></div>
+			<div class="box">
+				<div class="close">X</div>
+			</div>
+		
+	</section><!-- final da section-->
+
+	<footer><!--Inicio do Rodapé da Página-->
+		<!--Box com os links-->
+		<div class="links">
+			<a href="#">COMPANY</a>
+			<a href="#">CONTACT US</a>
+			<a href="#">SHIPPING</a>
+			<br>
+			<a href="#">RETURNS</a>
+			<a href="#">CAREERS</a>
+	
+			<p>2015 Merlin´s Potions. All Rights Reserved</p>
+		</div>
+		<!--Box contendo informações de Contato-->
+		<div class="contato">
+			<p>Sing up our Newslatter</p><br>
+			<p>Sign up for our newslatter & get exclusive discounts!</p>
+			<form action="#">
+				<input type="email" class="email" placeholder="Enter your email">
+				<input type="submit" class="btn2" value="SUBMIT">
+			</form>
+		</div>
+	</footer>
+  
+  <script>
+    $(document).ready(function(){
+    
+
+    $('.lightbox').click(function(){
+      $('.background, .box').animate({'opacity':'.60'},500, ' linear');
+      $('.box').animate({'opacity':'1.00'},500, ' linear');
+      
+      $('.background, .box').css('display','block');
+    });
+  });
+  </script>
+  <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="JS/menu_responsivo.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+
+</body>
+</html>
