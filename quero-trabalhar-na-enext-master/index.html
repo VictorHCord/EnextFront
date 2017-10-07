@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/potions_body.css">
 	<link rel="stylesheet" type="text/css" href="css/footer_potions.css">
 	<link rel="stylesheet" type="text/css" href="css/menu_complementos.css">
+	<link rel="stylesheet" type="text/css" href="css/lighpotions.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald" rel="stylesheet">
 
 </head>
@@ -88,38 +89,90 @@
 		<h1>Potions</h1><!--Titulo da Página-->
 
 		<div class="potions_cash">
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/aging-potion.png"></a>
-				<legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
-			</div>
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/bulgeye-potion.png"></a>
-				<legend><b>Bulgeye Potion - </b><span class="cash_potions">19.99</span></legend>
-			</div>
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/dragon-tonic.png"></a>
-				<legend><b>Dragon Tonic - </b><span class="cash_potions">64.99</span></legend>
-			</div>
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/love-potion.png"></a>
-				<legend><b>Love Potion - </b><span class="cash_potions">29.99</span></legend>
-			</div>
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/polyjuice-potion.png"></a>
-				<legend><b>Polyjuice Potion - </b><span class="cash_potions">99.99</span></legend>
-			</div>
-			<div>
-				<a href="#" class="lightbox"><img src="acessorio/assets/products/sleeping-draught.png"onclick="openModal();"></a>
-				<legend><b>Sleeping Draught - </b><span class="cash_potions">29.99</span></legend>
-			</div>
+			<div class="row">
+              
+              <!-- o Open click foi feito para quando clicar na imagem execute uma açao feita no app.js -->
+              <!-- CurrentSlide para nomear os slides quando for solicitado no MySlides -->
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/aging-potion.png" onclick="openModal();currentSlide(1)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 <div class="row">
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/bulgeye-potion.png" onclick="openModal();currentSlide(2)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 
+          
+          <div class="row">
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/dragon-tonic.png" onclick="openModal();currentSlide(3)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 
+          
+          <div class="row">
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/love-potion.png" onclick="openModal();currentSlide(4)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 
+          
+          <div class="row">
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/polyjuice-potion.png" onclick="openModal();currentSlide(5)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 
+          
+          <div class="row">
+				<a href="#" class="lightbox"><img src="acessorio/assets/products/sleeping-draught.png" onclick="openModal();currentSlide(6)"></a>
+                <legend><b>Aging Potion - </b><span class="cash_potions">29.99</span></legend>
+			 
+              </div>
+		 
+          
+          <!-- Criando um pequeno slide para abrir as boxes do lighbox quando cliclar -->
+
+         <div id="myModal" class="modal">
+           <!-- Apos clicar no X Vai executar essa funcao -->
+         <span class="close cursor" onclick="closeModal()">&times;</span> 
+         <div class="modal-content">
+
+           
+           <!-- Todas as fotos das poçoes -->
+          <div class="mySlides">
+          <img src="acessorio/assets/products/aging-potion.png" style="width:100%">
+          </div>
+           
+           <div class="mySlides">
+           <img src="acessorio/assets/products/bulgeye-potion.png" style="width: 100%">
+           </div>
+           
+           
+           <div class="mySlides">
+           <img src="acessorio/assets/products/dragon-tonic.png" style="width: 100%">
+           </div>
+           
+           
+           <div class="mySlides">
+           <img src="acessorio/assets/products/love-potion.png" style="width: 100%">
+           </div>
+           
+           
+           <div class="mySlides">
+           <img src="acessorio/assets/products/polyjuice-potion.png" style="width: 100%">
+           </div>
+           
+           
+           <div class="mySlides">
+           <img src="acessorio/assets/products/sleeping-draught.png" style="width: 100%">
+           </div>
 		</div>
+          </div>
+      </div>
 
-
-	 <div class="background"></div>
-			<div class="box">
-				<div class="close">X</div>
-			</div>
-		
+      
 	</section><!-- final da section-->
 
 	<footer><!--Inicio do Rodapé da Página-->
@@ -146,7 +199,7 @@
 	</footer>
   
   
-  
+  <!-- Acesso aos Arquivos JS -->
   <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="JS/app.js"></script>
 
